@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<hibernate-configuration>
+	<session-factory>
+		
+		<!-- Set URL -->
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/d604230</property>
+
+		<!-- Set User Name -->
+		<property name = "hibernate.connection.username">root</property>
+
+		<!-- Set Password -->
+		<property name = "hibernate.connection.password">root</property>
+
+		<!-- Set Driver Name -->
+		<property name = "hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		<property name = "hibernate.show_sql">true</property>
+		
+	</session-factory>
+</hibernate-configuration>
