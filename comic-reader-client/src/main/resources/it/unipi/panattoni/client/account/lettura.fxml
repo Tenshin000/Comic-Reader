@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="714.0" spacing="10.0" stylesheets="@../../../../../CSS/tabella.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.panattoni.client.account.LetturaController">
+   <children>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="663.0" styleClass="Box" VBox.vgrow="ALWAYS">
+         <content>
+            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="599.0" styleClass="tabella">
+               <children>
+                  <ImageView fitHeight="105.0" fitWidth="235.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../img/Logo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="1.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fumetti Finiti" textAlignment="CENTER" wrappingWidth="569.6708984375">
+                     <font>
+                        <Font name="Arial Bold" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" top="2.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TableView fx:id="tabFiniti" fixedCellSize="25.0" prefHeight="200.0" prefWidth="200.0" styleClass="tabella">
+                     <VBox.margin>
+                        <Insets bottom="2.0" left="50.0" right="50.0" top="2.0" />
+                     </VBox.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#rimuovi_finiti" text="Rimuovi" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fumetti Non Finiti" textAlignment="CENTER" wrappingWidth="708.6708984375">
+                     <font>
+                        <Font name="Arial Bold" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" top="2.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TableView fx:id="tabInCorso" fixedCellSize="25.0" prefHeight="200.0" prefWidth="200.0" styleClass="tabella">
+                     <VBox.margin>
+                        <Insets bottom="2.0" left="50.0" right="50.0" top="2.0" />
+                     </VBox.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#rimuovi_inCorso" text="Rimuovi" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fumetti da Leggere" textAlignment="CENTER" wrappingWidth="569.6708984375">
+                     <font>
+                        <Font name="Arial Bold" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="2.0" top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <StackPane alignment="TOP_CENTER" prefHeight="45.0" prefWidth="471.0">
+                     <children>
+                        <ChoiceBox fx:id="scelte" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;" visible="false" />
+                        <TextField fx:id="ricerca" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="500.0" promptText="Digita il titolo di un Fumetto" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="aggiungi" mnemonicParsing="false" onAction="#nuovo_da_leggere" text="Aggiungi">
+                           <StackPane.margin>
+                              <Insets left="416.0" />
+                           </StackPane.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </StackPane>
+                  <TableView fx:id="tabDaLeggere" fixedCellSize="25.0" prefHeight="200.0" prefWidth="200.0" styleClass="tabella">
+                     <VBox.margin>
+                        <Insets bottom="2.0" left="50.0" right="50.0" top="2.0" />
+                     </VBox.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#rimuovi_daLeggere" text="Rimuovi" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToHome" prefHeight="58.0" prefWidth="252.0" style="-fx-background-color: #66CCFF;" text="Torna alla Pagina Principale">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

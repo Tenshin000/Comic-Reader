@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="714.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.panattoni.client.HomeController">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="45.0" style="-fx-background-color: #66CCFF;">
+         <children>
+            <ImageView fx:id="menu" fitHeight="30.0" fitWidth="47.0" onMouseClicked="#click_menu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../img/Menu.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </ImageView>
+            <StackPane prefHeight="45.0" prefWidth="471.0">
+               <children>
+                  <ChoiceBox fx:id="scelte" prefHeight="31.0" prefWidth="502.0" style="-fx-background-color: #FFFFFF;" visible="false" />
+                  <TextField fx:id="ricerca" prefHeight="38.0" prefWidth="471.0" promptText="Digita il titolo di un Fumetto" HBox.hgrow="ALWAYS" />
+                  <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <StackPane.margin>
+                        <Insets left="424.0" />
+                     </StackPane.margin>
+                     <image>
+                        <Image url="@../../../../img/Search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </StackPane>
+         </children>
+         <VBox.margin>
+            <Insets bottom="-10.0" />
+         </VBox.margin>
+      </HBox>
+      <StackPane alignment="TOP_LEFT">
+         <children>
+            <Text fx:id="message" StackPane.alignment="TOP_LEFT">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets left="20.0" top="20.0" />
+               </StackPane.margin>
+            </Text>
+            <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="625.0" prefWidth="714.0">
+                  <content>
+                      <GridPane fx:id="griglia" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="412.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                          </rowConstraints>
+                      </GridPane>
+                  </content>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets top="55.0" />
+               </StackPane.margin>
+              </ScrollPane>
+            <VBox fx:id="panel" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="220.0" prefWidth="145.0" style="-fx-background-color: #66CCFF;" visible="false">
+               <children>
+                  <Button fx:id="profilo" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#switchToProfilo" prefHeight="39.0" text="Profilo" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="6.0" top="6.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="locale" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#switchToLocale" prefHeight="39.0" text="Locale" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="da_leggere" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#switchToLettura" prefHeight="39.0" text="Da Leggere" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="6.0" top="6.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="manuale" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#switchToManuale" prefHeight="39.0" text="Manuale" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logout" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#logout" prefHeight="39.0" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="6.0" top="6.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</VBox>

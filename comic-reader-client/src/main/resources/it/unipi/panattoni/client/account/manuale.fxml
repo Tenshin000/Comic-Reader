@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="1924.0" prefWidth="1062.0" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.panattoni.client.account.ManualeController">
+   <content>
+      <StackPane alignment="TOP_CENTER" prefHeight="1880.0" prefWidth="1060.0">
+         <children>
+            <Group>
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="1873.0" prefWidth="1060.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="105.0" fitWidth="235.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../img/Logo.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0">
+                           <children>
+                              <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToHome" prefHeight="50.0" prefWidth="227.0" style="-fx-background-color: #66CCFF;" text="Torna alla Pagina Principale">
+                                 <font>
+                                    <Font name="Arial" size="16.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="2.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="2.0" top="2.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Manuale" textAlignment="CENTER" wrappingWidth="571.6708984375">
+                                 <font>
+                                    <Font name="Arial Bold" size="28.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Label text="Benvenuti in Comic Reader: la tua finestra sul mondo dei fumetti e dei manga!">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" nodeOrientation="INHERIT" prefWidth="1060.0" text="Comic Reader è un'applicazione innovativa progettata per gli amanti dei fumetti e dei manga che desiderano un'esperienza di lettura senza pari. &#10;&#10;Grazie alla nostra interfaccia utente semplice e intuitiva, immergiti nella tua lettura senza distrazioni. Scorri tra i capitoli con facilità e goditi una visualizzazione impeccabile dei tuoi fumetti preferiti. &#10;&#10;Non hai trovato il tuo fumetto preferito nella nostra libreria? Nessun problema! Con la funzione di aggiunta locale, puoi caricare i tuoi fumetti personali direttamente sull'applicazione e creare la tua collezione personalizzata." wrapText="true">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="15.0" right="15.0" top="2.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Label text="Come faccio a vedere quali fumetti ha il catalogo?">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" nodeOrientation="INHERIT" prefWidth="1030.0" text="Per vedere i fumetti nel catalogo, basta che inserisci nella barra di ricerca in alto a sinistra, il titolo o l'autore del fumetto. Comparirà a schermo un riquadro con le informazioni del fumetto. Cliccandoci sopra potrai accedere alla schermata di presentazione del fumetto e vedere i capitoli presenti nel catalogo. Cliccando sopra il titolo del capitolo potrai accedere alla schermata di lettura. " wrapText="true">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="15.0" right="15.0" top="2.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Label text="Non riesco a vedere bene l'immagine. Non c'è uno zoom? ">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" nodeOrientation="INHERIT" prefWidth="1030.0" text="Per zoomare sull'immagine del fumetto, puoi semplicemente fare click con il tasto sinistro del mouse. Ogni click aumenterà gradualmente lo zoom: il primo click porterà ad un ingrandimento di 2x, mentre il secondo raggiungerà un ingrandimento di 4x. Il massimo di zoom è 4x. Inoltre, se desideri ridurre lo zoom, basta cliccare con il tasto destro del mouse. Il minimo di zoom è 0.5x. &#10;&#10;Per tornare alla visualizzazione originale, puoi eseguire uno zoom-out dalla pagina. È importante notare che tutti gli aggiustamenti allo zoom verranno resettati automaticamente quando passerai alla pagina successiva utilizzando i pulsanti posizionati nell'area centrale superiore dell'applicazione." wrapText="true">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="15.0" right="15.0" top="2.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Label text="Vuoi sapere come funziona il sistema di valutazione?">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" nodeOrientation="INHERIT" prefWidth="1030.0" text="All'inizio, ai fumetti vengono assegnati a una valutazione predefinita. Tuttavia, questa valutazione può essere personalizzata dagli utenti che utilizzano l'applicazione localmente. Le tue preferenze saranno registrate tramite il sistema a stelle visualizzato nella schermata di presentazione del fumetto. Hai il pieno controllo sulla tua valutazione e puoi modificarla in qualsiasi momento. Tuttavia, è importante notare che non sarà possibile esprimere un giudizio su un fumetto finché non avrai letto almeno un capitolo. Puoi votare cliccando la stella corrispondente al tuo voto. " wrapText="true">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="15.0" right="15.0" top="2.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Label text="Ti piacerebbe leggere i manga seguendo la tradizione orientale, da destra verso sinistra?">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" nodeOrientation="INHERIT" prefWidth="1030.0" text="Puoi abilitare il layout di lettura orientale specificamente per i manga, rendendo l'esperienza ancora più autentica. Basta cliccare sull'icona con le tre linee bianche nell'angolo in alto a sinistra della schermata principale e selezionare 'Profilo'. Da lì, avrai l'opzione di attivare lo stile di lettura orientale, basta spuntare la relativa casella di controllo. In questo modo, potrai immergerti completamente nel mondo dei manga, seguendo la sequenza di lettura originale." wrapText="true">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="15.0" right="15.0" top="2.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Label text="Voglio leggere un fumetto, ma non ho tempo al momento. Ho paura di dimenticarmelo. Posso segnarlo in qualche modo sull'applicazione?" wrapText="true">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextArea editable="false" nodeOrientation="INHERIT" prefWidth="1030.0" text="Basta cliccare sull'icona delle tre linee bianche nell'angolo in alto a sinistra della schermata principale e selezionare 'Da Leggere'. Qui troverai un elenco dei fumetti che hai già letto, quelli che devi ancora terminare e un'opzione per aggiungere nuovi fumetti. Puoi anche utilizzare la barra di ricerca per trovare e aggiungere rapidamente il fumetto desiderato.&#10;&#10;Se in seguito cambierai idea o perderai interesse per un fumetto, non preoccuparti! Con un semplice click destro del mouse sulla riga del fumetto, avrai l'opzione 'Rimuovi' per eliminarlo dalla lista dei fumetti da leggere." wrapText="true">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="15.0" right="15.0" top="2.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Label text="Come faccio a inserire un fumetto?">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" nodeOrientation="INHERIT" prefHeight="444.0" prefWidth="1030.0" text="Dirigiti nella cartella &quot;comic-reader-server\src\main\fumetti&quot; e inserisci la cartella del fumetto desiderato. Assicurati che all'interno di questa cartella ci siano ulteriori cartelle rappresentanti i singoli capitoli del fumetto. Ogni cartella dei capitoli dovrebbe contenere le immagini delle pagine, tutte nel medesimo formato (come &quot;jpg&quot;, &quot;png&quot; o &quot;jpeg&quot;). Se desideri aggiungere una copertina, posizionala all'interno della cartella &quot;comic-reader-server\src\main\fumetti\Copertine&quot;, utilizzando lo stesso nome della cartella del fumetto. In mancanza di una copertina specifica, verrà utilizzata automaticamente una predefinita.&#10;&#10;Riavviata l'applicazione, le cartelle e le pagine verrano rinominate in ordine numerico. &#10;&#10;ATTENZIONE: È fondamentale che le cartelle dei capitoli siano denominate in modo che seguano un ordine numerico crescente all'interno della cartella del fumetto, così come le immagini all'interno di ciascuna cartella. Questo garantisce che i capitoli vengano inseriti nell'ordine corretto.&#10;&#10;Una volta attivata l'applicazione, fai clic sull'icona delle tre linee bianche nell'angolo in alto a sinistra e seleziona l'opzione 'Locale'. Nella nuova schermata, digita il nome della cartella del fumetto nella barra di ricerca e modifica le informazioni necessarie all'interno della tabella. Assicurati di premere il pulsante 'Salva' per confermare le modifiche.&#10;&#10;ATTENZIONE: Ricorda che se non premi &quot;Invio&quot; dopo aver inserito le informazioni in una cella della tabella, queste saranno essere perse e le dovrai riscrivere. Inoltre una volta modificate, cliccare sempre il pulsante 'Salva'.  &#10;&#10;Se desideri rimuovere un fumetto dal database, utilizza il pulsante 'Rimuovi'. Tuttavia, questa azione non elimina fisicamente il fumetto dalla cartella &quot;comic-reader-server\src\main\fumetti&quot;. Dopo averlo rimosso dal database, assicurati di eliminarlo manualmente dalla cartella e di rimuovere anche la copertina, se presente. &#10;&#10;Si possono cambiare anche le informazioni sui capitoli.  La data deve avere questo formato &quot;YYYY-MM-dd&quot; o questo formato &quot;MMM dd, yyyy&quot; per essere accettata. " wrapText="true">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="2.0" left="15.0" right="15.0" top="2.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Group />
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+         </children>
+      </StackPane>
+   </content>
+</ScrollPane>

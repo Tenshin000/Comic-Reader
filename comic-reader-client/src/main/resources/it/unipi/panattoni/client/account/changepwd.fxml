@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.panattoni.client.account.ChangePasswordController">
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="235.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../img/Logo.png" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin></ImageView>
+      <Label alignment="CENTER" prefHeight="42.0" prefWidth="232.0" text="Modifica Password" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <PasswordField fx:id="password" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="44.0" prefWidth="375.0" promptText="Nuova Password">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </PasswordField>
+      <PasswordField fx:id="conferma" layoutX="121.0" layoutY="187.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="44.0" prefWidth="375.0" promptText="Conferma Password">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </PasswordField>
+      <Button fx:id="cambia" mnemonicParsing="false" onAction="#changePassword" prefHeight="48.0" prefWidth="425.0" style="-fx-background-color: #66CCFF;" text="Cambia Password">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" top="15.0" />
+         </VBox.margin>
+      </Button>
+      <Text fx:id="notifica" fill="#f20202" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" visible="false" wrappingWidth="425.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </VBox.margin>
+      </Text>
+      <Button fx:id="login" mnemonicParsing="false" onAction="#switchToProfilo" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #66CCFF;" text="Torna alla schermata del Profilo">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="44.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

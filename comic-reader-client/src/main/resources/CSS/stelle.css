@@ -1,0 +1,32 @@
+/* 
+    Author: Francesco Panattoni
+*/
+
+.rating{
+    position: relative;
+    display: flex;
+    margin: 10px;
+}
+
+.stella > .radio{
+    -fx-background-color: transparent; /* Trasforma il radio button in un cerchio trasparente */
+}
+
+.stella{
+    -fx-padding: 0.5em;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-shape: "M10 0 L12 8 L20 8 L14.5 13 L16 20 L10 15 L4 20 L5.5 13 L0 8 L8 8 Z";
+}
+
+.stella.illuminata{
+    -fx-background-color: yellow;
+}
+
+.tabella .scroll-bar * {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}

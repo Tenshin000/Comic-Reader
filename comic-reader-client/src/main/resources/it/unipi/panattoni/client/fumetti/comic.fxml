@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="802.0" prefWidth="1062.0" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.panattoni.client.fumetti.ComicController">
+   <content>
+      <VBox alignment="TOP_CENTER" spacing="10.0" stylesheets="@../../../../../CSS/stelle.css">
+         <children>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0">
+               <children>
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToHome" prefHeight="50.0" prefWidth="227.0" style="-fx-background-color: #66CCFF;" text="Torna alla Pagina Principale">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="2.0" top="2.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="2.0" />
+                     </padding>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox alignment="TOP_CENTER">
+               <children>
+                  <Text fx:id="titolo" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold Italic" size="28.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="TOP_CENTER">
+                     <children>
+                        <ImageView fx:id="copertina" fitHeight="229.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true" />
+                        <VBox styleClass="rating">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Text fx:id="text_autori" strokeType="OUTSIDE" strokeWidth="0.0" text="Autori: ">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="2.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <Text fx:id="autori" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font name="Arial" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="2.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data di Uscita: ">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="2.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <Text fx:id="data_uscita" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font name="Arial" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="2.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sinossi: ">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="2.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <Text fx:id="sinossi" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="395.0">
+                                       <font>
+                                          <Font name="Arial" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="2.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Valutazione: ">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="2.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <Text fx:id="valutazione" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font name="Arial" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="2.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="2.0" top="2.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="rating" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="698.0">
+                     <children>
+                        <Region prefHeight="43.0" prefWidth="40.0" styleClass="stella" />
+                        <Region prefHeight="43.0" prefWidth="40.0" styleClass="stella" />
+                        <Region prefHeight="43.0" prefWidth="40.0" styleClass="stella" />
+                        <Region prefHeight="43.0" prefWidth="40.0" styleClass="stella" />
+                        <Region prefHeight="43.0" prefWidth="40.0" styleClass="stella" />
+                        <Region prefHeight="43.0" prefWidth="40.0" styleClass="stella" />
+                        <Region prefHeight="43.0" prefWidth="40.0" styleClass="stella" />
+                        <Region prefHeight="43.0" prefWidth="40.0" styleClass="stella" />
+                        <Region prefHeight="43.0" prefWidth="40.0" styleClass="stella" />
+                        <Region prefHeight="43.0" prefWidth="40.0" styleClass="stella" />
+                     </children>
+                  </HBox>
+                  <Text fx:id="voto_utente" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="443.6708984375">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Group VBox.vgrow="ALWAYS">
+                     <children>
+                        <TableView fx:id="tabella_capitoli" fixedCellSize="75.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="736.0" styleClass="tabella">
+                           <columns>
+                              <TableColumn fx:id="colCapitolo" editable="false" prefWidth="204.0" text="Capitolo" />
+                              <TableColumn fx:id="colDescrizione" editable="false" prefWidth="423.0" text="Descrizione" />
+                              <TableColumn fx:id="colPagine" editable="false" prefWidth="108.0" text="Pagine" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </Group>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
